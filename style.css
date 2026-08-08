@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1220;
+  color: #ffffff;
+}
+
+.app {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+
+/*-------------------------------------------------*/
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.5rem;
+  background: #191d33;
+  border: 1px solid #2a3154;
+  border-radius: 18px;
+}
+
+.site-header h1 {
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+}
+
+.site-header p {
+  color: #b8bfd9;
+}
+
+.eyebrow {
+  margin-bottom: 0.4rem;
+  color: #dad8ea;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+#themeBtn {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  background: #010620;
+  color: white;
+}
+
+#themeBtn:hover{
+    background: #0d036b;
+}
+
+
+/*---------------------------------------------------*/
+
+.quest-section {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.section-heading p,
+.section-heading h2 {
+  margin: 0;
+}
+
+.category-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #038303;
+  color: #f9f9fb;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.quest-card {
+  padding: 2rem;
+  background: #010318;
+  border: 1px solid #595a5e;
+  border-radius: 18px;
+}
+
+.quest-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.quest-card h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.quest-card label {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#questNote {
+  width: 100%;
+  min-height: 110px;
+  resize: vertical;
+
+  padding: 1rem;
+  border: 1px solid #343b61;
+  border-radius: 12px;
+
+  background: #151515;
+  color: rgb(255, 255, 255);
+}
+
+.complete-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  border: 0;
+  border-radius: 12px;
+
+  background: #27c77c;
+  color: #07150e;
+
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.complete-btn:hover {
+  opacity: 0.9;
+}
+
+
+/*-------------------------------------------*/
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  background: #020d49;
+  border: 1px solid #5a5a5f;
+  border-radius: 16px;
+}
+
+.stat-card p {
+  margin-bottom: 0.5rem;
+  color: #b8bfd9;
+}
+
+.stat-card strong {
+  font-size: 1.8rem;
+}
+
+
+
+/*-------------------------------*/
+
+.photo-section {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #040934;
+  border: 1px solid #383838;
+  border-radius: 16px;
+}
+
+.photo-section p {
+  color: #b8bfd9;
+}
+
+#photoInput {
+  margin-top: 0.5rem;
+}
+
+#photoPreview {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+#photoPreview[hidden] {
+  display: none;
+}
+
+
+/*------------------------------------------------------*/
+
+.history-section {
+  margin-top: 1.5rem;
+}
+
+.history-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.history-card {
+  padding: 1.2rem;
+  background: #191d33;
+  border: 1px solid #2a3154;
+  border-radius: 14px;
+}
+
+.history-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.history-card p {
+  color: #b8bfd9;
+}
+
+/*-------------------------------------*/
+
+body.light-mode {
+  background: #f4f5f8;
+  color: #111111;
+}
+
+body.light-mode .site-header,
+body.light-mode .quest-card,
+body.light-mode .stat-card,
+body.light-mode .photo-section,
+body.light-mode .history-card {
+  background: #e2dafe;
+  color: #111111;
+  border-color: #140101;
+}
+
+body.light-mode .share-section h2 {
+  color: #ffffff;
+}
+body.light-mode .site-header p,
+body.light-mode .stat-card p,
+body.light-mode .photo-section p,
+body.light-mode .history-card p {
+  color: #555555;
+}
+
+/* /---------------------------------------------------------------- */
+
+
+.reset-section {
+    
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #303c7f;
+  border: 1px solid #2a3154;
+  border-radius: 16px;
+}
+
+.reset-section button {
+
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body.light-mode .reset-section {
+  background: #ffffff;
+  color: #111111;
+  border-color: #dddddd;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+.share-section {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #061353;
+  border: 1px solid #2a3154;
+  border-radius: 16px;
+}
+
+
+#shareQuestBtn,
+#downloadQuest {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: #8d7cff;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#questCanvas {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+#shareCardBtn {
+
+    display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: #8d7cff;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+/*---------------------------------------------------------------------*/
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+
+  .quest-card h2 {
+    font-size: 1.5rem;
+  }
+}

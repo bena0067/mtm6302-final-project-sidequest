@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidequest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app">
+
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Daily Adventure</p>
+        <h1>Sidequest</h1>
+        <p>Break the routine, one small quest at a time.</p>
+      </div>
+
+      <button type="button" id="themeBtn">
+        🌙 Dark Mode
+      </button>
+    </header>
+
+    <section class="quest-section">
+      <div class="section-heading">
+        <p>Today's Quest</p>
+        <span id="questCategory" class="category-badge">
+          Social
+        </span>
+      </div>
+
+      <article class="quest-card">
+        <p class="quest-icon">⚔️</p>
+
+        <h2 id="questText">
+          Your daily quest will appear here.
+        </h2>
+
+        <label for="questNote">
+          Optional Note
+        </label>
+
+        <textarea
+          id="questNote"
+          placeholder="How did the quest go?"
+        ></textarea>
+
+
+        <section class="share-section">
+  <h2>Share Your Quest</h2>
+
+  <button type="button" id="shareQuestBtn">
+    Generate Quest Card
+  </button>
+
+  <button type="button" id="shareCardBtn" hidden>
+  Share Quest Card
+</button>
+
+<a id="downloadQuest" hidden>
+    Save Quest Card
+  </a>
+
+  <canvas
+    id="questCanvas"
+    width="700"
+    height="400"
+    hidden
+  ></canvas>
+
+ 
+</section>
+
+        <button type="button" id="completeBtn" class="complete-btn">
+          ✓ Mark Quest Complete
+        </button>
+      </article>
+    </section>
+
+    <section class="stats-section">
+      <article class="stat-card">
+        <p>🔥 Current Streak</p>
+        <strong>
+          <span id="streakCount">0</span> Days
+        </strong>
+      </article>
+
+
+
+
+
+
+      <article class="stat-card">
+        <p>🏆 Completed Quests</p>
+        <strong id="completedCount">0</strong>
+      </article>
+    </section>
+
+    
+      <section class="reset-section">
+  <h2>Reset Options</h2>
+
+  <button type="button" id="resetStreakBtn">
+    Reset Streak
+  </button>
+
+  <button type="button" id="resetHistoryBtn">
+    Reset Quest History
+  </button>
+
+  <button type="button" id="resetAllBtn">
+    Reset Everything
+  </button>
+</section>
+
+    <section class="photo-section">
+      <h2>Quest Photo</h2>
+      <p>Add an optional photo preview for today's quest.</p>
+
+      <input
+        type="file"
+        id="photoInput"
+        accept="image/*"
+      >
+
+      <img
+        id="photoPreview"
+        src=""
+        alt="Selected quest preview"
+        hidden
+      >
+    </section>
+
+    <section class="history-section">
+      <div class="section-heading">
+        <h2>Quest History</h2>
+        <span>Completed Quests</span>
+      </div>
+
+      <div id="historyList" class="history-list"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
