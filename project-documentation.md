@@ -69,10 +69,32 @@ I tested:
 - Reset options
 - Responsive layout
 
+## Client Communication
+
+I contacted Mehdi by email on August 9, 2026 to confirm my understanding of the Sidequest project and request feedback on the application.
+
+### Questions / Points Confirmed
+
+I asked the client to review whether the application matched the original project vision and whether any features, layout elements, or interactions should be changed.
+
+
 ## Client Feedback
 
-Waiting for client feedback.
+The client tested the application and confirmed that the main features matched the original project idea.
 
-## Changes After Feedback
+The client requested the following changes:
 
-Waiting for client feedback.
+- Move the optional notes section lower on the page.
+- Move the photo preview closer to the daily quest.
+- Improve the Reset Options colours in light mode for better readability.
+
+
+## Changes After Client Feedback
+
+Based on the client's feedback, I made the following changes:
+
+- Moved the optional notes section lower on the page so the daily quest remains the main focus.
+- Moved the quest photo preview higher on the page and closer to the daily quest.
+- Updated the Reset Options styling in light mode to improve readability.
+- Adjusted the textarea text and placeholder for the "Reset Options" section styling so it remains readable in both themes.
+- Retested the application after the changes to make sure the existing features still worked correctly.

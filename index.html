@@ -37,14 +37,24 @@
           Your daily quest will appear here.
         </h2>
 
-        <label for="questNote">
-          Optional Note
-        </label>
 
-        <textarea
-          id="questNote"
-          placeholder="How did the quest go?"
-        ></textarea>
+    <section class="photo-section">
+      <h2>Quest Photo</h2>
+      <p>Add an optional photo preview for today's quest.</p>
+
+      <input
+        type="file"
+        id="photoInput"
+        accept="image/*"
+      >
+
+      <img
+        id="photoPreview"
+        src=""
+        alt="Selected quest preview"
+        hidden
+      >
+    
 
 
         <section class="share-section">
@@ -114,24 +124,23 @@
   </button>
 </section>
 
-    <section class="photo-section">
-      <h2>Quest Photo</h2>
-      <p>Add an optional photo preview for today's quest.</p>
+</section>
 
-      <input
-        type="file"
-        id="photoInput"
-        accept="image/*"
-      >
 
-      <img
-        id="photoPreview"
-        src=""
-        alt="Selected quest preview"
-        hidden
-      >
-    </section>
+<section class="note-section">
+  <label for="questNote">
+          Optional Note
+        </label>
 
+        <textarea
+          id="questNote"
+          placeholder="How did the quest go?"
+        ></textarea>
+</section>
+
+
+        
+                                        
     <section class="history-section">
       <div class="section-heading">
         <h2>Quest History</h2>

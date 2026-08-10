@@ -31,6 +31,10 @@ p {
   margin-top: 0;
 }
 
+.note-section {
+  margin-top: 2rem;
+}
+
 
 /*-------------------------------------------------*/
 
@@ -249,29 +253,47 @@ p {
 /*-------------------------------------*/
 
 body.light-mode {
-  background: #f4f5f8;
+  background: #fdfefe;
   color: #111111;
 }
 
 body.light-mode .site-header,
 body.light-mode .quest-card,
 body.light-mode .stat-card,
-body.light-mode .photo-section,
-body.light-mode .history-card {
-  background: #e2dafe;
+body.light-mode .history-card
+{
+  background: #e0daf8;
   color: #111111;
   border-color: #140101;
 }
-
-body.light-mode .share-section h2 {
-  color: #ffffff;
+body.light-mode .photo-section {
+  color: #fffefe;
+  background: #fafafb;
 }
+
 body.light-mode .site-header p,
 body.light-mode .stat-card p,
 body.light-mode .photo-section p,
-body.light-mode .history-card p {
-  color: #555555;
+body.light-mode .photo-section h2,
+body.light-mode .history-card p{
+  color: #070000;
 }
+body.light-mode .share-section h2{
+  color: #fafafb;
+}
+
+body.light-mode .reset-section button {
+  background:#e0daf8 ;
+  color:rgb(0, 0, 0) ;
+}
+
+
+body.light-mode #questNote::placeholder {
+  color: rgb(217, 217, 217) ;
+}
+ 
+
+
 
 /* /---------------------------------------------------------------- */
 
