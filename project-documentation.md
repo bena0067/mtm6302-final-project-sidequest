@@ -69,6 +69,15 @@ I tested:
 - Reset options
 - Responsive layout
 
+
+
+
+## IMPORTANT NOTE ////////////////////////////////////////////////////
+
+I contacted the client by email because I did not realize that I was supposed to use the Project Exchange app for client communication But I attached screenshots of the email exchange I had with the them IN THE Client-Developer-Communication folder.
+
+
+
 ## Client Communication
 
 I contacted Mehdi by email on August 9, 2026 to confirm my understanding of the Sidequest project and request feedback on the application.
@@ -77,6 +86,7 @@ I contacted Mehdi by email on August 9, 2026 to confirm my understanding of the 
 
 I asked the client to review whether the application matched the original project vision and whether any features, layout elements, or interactions should be changed.
 
+I initially forgot about the requirement to send the low-fidelity prototype to the client for feedback, so I sent the completed application first. After remembering the low-fidelity requirement, I sent it to the client, and added it to the project documentation.
 
 ## Client Feedback
 
@@ -88,7 +98,6 @@ The client requested the following changes:
 - Move the photo preview closer to the daily quest.
 - Improve the Reset Options colours in light mode for better readability.
 
-
 ## Changes After Client Feedback
 
 Based on the client's feedback, I made the following changes:
@@ -96,5 +105,5 @@ Based on the client's feedback, I made the following changes:
 - Moved the optional notes section lower on the page so the daily quest remains the main focus.
 - Moved the quest photo preview higher on the page and closer to the daily quest.
 - Updated the Reset Options styling in light mode to improve readability.
-- Adjusted the textarea text and placeholder for the "Reset Options" section styling so it remains readable in both themes.
+- Adjusted the textarea text and placeholder styling so it remains readable in both themes.
 - Retested the application after the changes to make sure the existing features still worked correctly.
