@@ -88,6 +88,8 @@ I asked the client to review whether the application matched the original projec
 
 I initially forgot about the requirement to send the low-fidelity prototype to the client for feedback, so I sent the completed application first. After remembering the low-fidelity requirement, I sent it to the client, and added it to the project documentation.
 
+I finally sent an update on the final version of the app which the client reviewed and approved.
+
 ## Client Feedback
 
 The client tested the application and confirmed that the main features matched the original project idea.
